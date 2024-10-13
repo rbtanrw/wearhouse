@@ -1,0 +1,20 @@
+# Visual Studio
+.user
+.sln.docstates
+.vs/
+*/bin
+*/obj
+.exe
+.dll
+.pdb
+.log
+.cache
+.tmp
+
+# ASP.NET Specific
+.db
+.mdf
+.ldf
+
+# Environment variables
+.env

@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: var(--font);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 1.4rem 1.4rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #d8d7d7;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.navbar .nav-logo{
+    opacity: 100%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgb(26, 26, 26, 0.8);
+    padding-right: 2.1rem;
+}
+
+.navbar .nav-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-size: medium;
+    color: #000;
+}
+
+.navbar .nav-link{
+    margin-right: 1.4rem;
+}
+
+.navbar .hamburger{
+    display: none;
+    height: 2.4rem;
+    width: 3.3rem;
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 5px;
+    margin: 0;
+    padding-top: 0.1rem;
+}
+
+.navbar .line{
+    width: 2.1rem;
+    height: 0.3rem;
+    margin: 0.3rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(121, 121, 121);
+    border-radius: 5px;
+}
+
+/* Navbar End */
+
+/* Hero Start */
+.hero{
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.hero img{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.hero-txt{
+    margin: 1.8rem 0.7rem;
+    padding-left: 40%;
+    position: absolute;
+    font-size: large;
+}
+
+.hero-txt h1{
+    display: flex;
+    justify-content: center;
+    margin: 1.8rem 0 0.7rem 0;
+}
+
+/* Hero End */
+
+/* Login Start */
+.login{
+    display: flex;
+    width: 100vw;
+    height: 73vh;
+    justify-content: center;
+}
+
+.login-box{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    width: 50vw;
+    height: 50vh;
+    margin-top: 8vh;
+}
+
+.login-txt{
+    background-color: rgb(224, 224, 224);
+    font-size: large;
+    text-align: left;
+    height: auto;
+    padding: 0.7rem 0.7rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-radius: 8px 8px 0 0;
+}
+
+.login form{
+    margin: 3.5rem 0;
+    font-size: larger;
+}
+
+.form-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+    align-items: center;
+}
+
+.input{
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 3px;
+    margin-left: 0.7rem;
+    padding-left: 0.3rem;
+    height: 1.4rem;
+}
+
+.form-cb{
+    font-size: medium;
+}
+
+.checkbox:hover{
+    cursor: pointer;
+}
+
+.form-content button{
+    background-color: rgb(0, 64, 255);
+    border-radius: 3px;
+    padding: 0.3rem 0.7rem;
+    color: rgb(255, 255, 255);
+    margin-right: 0.3rem;
+}
+
+.form-content a{
+    text-decoration: underline;
+    color: rgb(0, 0, 255);
+    font-size: small;
+}
+
+/* Login End */
+
+/* Register Start */
+.register{
+    display: flex;
+    width: 100vw;
+    height: 73vh;
+    justify-content: center;
+}
+
+.register-box{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    width: 50vw;
+    height: 50vh;
+    margin-top: 8vh;
+}
+
+.register-txt{
+    background-color: rgb(224, 224, 224);
+    font-size: large;
+    text-align: left;
+    height: auto;
+    padding: 0.7rem 0.7rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-radius: 8px 8px 0 0;
+}
+
+.register form{
+    margin: 2.1rem 0;
+    font-size: larger;
+}
+
+.register-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+    align-items: center;
+}
+
+.register-cb{
+    font-size: medium;
+}
+
+/* Register End */
+
+/* About Start */
+.about{
+    padding: 1.4rem 0;
+    width: 100vw;
+    height: 73vh;
+    justify-content: center;
+}
+
+.about-txt{
+    margin-left: 0.7rem;
+}
+
+.about-content{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    padding: 2.8rem 1.4rem;
+    margin-top: 2.1rem;
+    font-size: larger;
+}
+
+.about-content h2{
+    margin-top: 1.4rem;
+}
+
+/* About End */
+
+/* Dashboard Start */
+.dashboard{
+    display: flex;
+    width: 100vw;
+    height: 73vh;
+    justify-content: center;
+}
+
+.dashboard-box{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    width: 25vw;
+    height: 25vh;
+    margin-top: 8vh;
+}
+
+.dashboard-txt{
+    background-color: rgb(224, 224, 224);
+    font-size: large;
+    text-align: left;
+    height: auto;
+    padding: 0.7rem 0.7rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-radius: 8px 8px 0 0;
+}
+
+.dashboard-content{
+    display: flex;
+    text-align: left;
+    font-size: large;
+    padding: 0.7rem;
+}
+
+/* Dashboard End */
+
+/* Category Start */
+.category{
+    width: 100%;
+    min-height: 73vh;
+}
+
+.category-txt{
+    margin: 1.4rem 0.7rem;
+    text-align: left;
+}
+
+.category-btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 64, 255);
+    border-radius: 8px;
+    padding: 0.7rem;
+    margin: 0.7rem;
+}
+
+.category-box{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+    margin: 0 0.7rem;
+    padding: 0.7rem;
+}
+
+.no{
+    padding: 0 12vw 0 0;
+}
+
+.cat{
+    padding: 0 40vw 0 0;
+}
+
+.act{
+    padding: 0 40vw 0 0;
+}
+
+.btn-edit{
+    color: rgb(255, 255, 255);
+    background-color: rgb(220, 194, 0);
+    border-radius: 8px;
+    padding: 0.4rem 0.7rem;
+}
+
+.btn-delete{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    border-radius: 8px;
+    padding: 0.4rem 0.7rem;
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgb(224, 224, 224);
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(255, 255, 255);
+}
+
+/* Category End */
+
+/* Popup Start */
+#popup-add{
+    display: none;
+}
+
+#popup-edit{
+    display: none;
+}
+
+#popup-delete{
+    display: none;
+}
+
+.popup-cover{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    opacity: 50%;
+    width: 100%;
+    height: 104%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.popup-box{
+    position: absolute;
+    width: 50%;
+    height: 36%;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    top: 32%;
+    right: 25%;
+    z-index: 1001;
+}
+
+.popup-box h2{
+    text-align: left;
+    padding: 0.7rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-radius: 8px 8px 0 0;
+}
+
+.popup-body{
+    padding: 1.4rem 0.7rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.popup-body input{
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 3px;
+    margin: 0.7rem 0;
+    padding-left: 0.3rem;
+    height: 1.4rem;
+    width: 70%;
+}
+
+.popup-btn{
+    margin-left: 80%;
+    margin-top: 1.4rem;
+    padding: 0.4rem 0.7rem;
+    background-color: rgb(26, 165, 59);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+}
+
+.popup-body p{
+    font-weight: bold;
+}
+
+#popup-delete-btn{
+    background-color: rgb(255, 0, 0);
+}
+
+/* Popup End */
+
+/* Footer */
+footer {
+    background-color: rgb(33, 31, 31);
+    text-align: center;
+    padding: 1.2rem 0 2.4rem;
+    color:#fff;
+}
+  
+footer .socials {
+    padding: 0.7rem 0;
+    color: white;
+}
+
+footer .socials a{
+    margin: 0 0.7rem;
+}
+
+footer .credit{
+    font-size: 0.8rem;
+}
+
+footer .credit span{
+    color: #cdcdcd;
+}
+
+/* Footer End */
+
+/* Media Start */
+@media (max-width: 600px) {
+    *{
+        font-size: small;
+    }
+
+    .hero{
+        height: 90vh;
+    }
+
+    .hero img{
+        height: 100%;
+    }
+
+    .hero p{
+        text-align: justify;
+    }
+
+    .navbar{
+        justify-content: space-between;
+    }
+
+    .navbar .hamburger{
+        display: inline-block;
+    }
+
+    .navbar .hamburger :hover{
+        cursor: pointer;
+    }
+
+    .navbar .nav-nav{
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: -120%;
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .nav-nav.active{
+        right: 0;
+    }
+
+    .navbar .nav-link{
+        display: block;
+        margin: 1.4rem;
+        padding: 1.4rem;
+        font-size: large;
+    }
+}
+
+/* Media End */
